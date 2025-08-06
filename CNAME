@@ -1,5 +1,1 @@
-echo "adaptanatasa.com" > CNAME
-git add CNAME
-git commit -m "Dodajem CNAME za GitHub Pages"
-git push
-
+adaptanatasa.com
