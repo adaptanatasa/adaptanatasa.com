@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+ <html lang="sr-Cyrl">
 <head>
 <link rel="icon" type="image/png" href="img/logo.PNG">
 
@@ -33,10 +33,100 @@
     background-color: #ffffff; /* White */
     color: #877875;
   }
+/* Банер и представљање ауторке */
+.author-header {
+  margin-top: 20px;
+}
+
+.author-banner {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.author-identity {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.author-logo {
+  display: block;
+  width: 110px;
+  max-width: 30%;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+
+.author-name {
+  margin: 0 0 8px;
+  color: #36739f;
+  font-size: 30px;
+  line-height: 1.3;
+}
+
+.author-description {
+  margin: 0;
+  color: #666;
+  font-size: 16px;
+}
+
+/* Картице остају испод заглавља */
+.nav-tabs {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 480px) {
+  .author-header {
+    margin-top: 10px;
+  }
+
+  .author-identity {
+    gap: 12px;
+    padding: 15px 0;
+  }
+
+  .author-logo {
+    width: 75px;
+  }
+
+  .author-name {
+    font-size: 23px;
+  }
+
+  .author-description {
+    font-size: 14px;
+  }
+}
  </style>
 </head>
 <body>
+<!-- Банер и лого изнад навигације -->
+<header class="container author-header">
+  <img
+    class="author-banner"
+    src="img/banerDelfin.jpg"
+    alt="Делфин у плавом мору">
 
+  <div class="author-identity">
+    <a class="author-logo" href="index.html" aria-label="Почетна страна">
+      <img
+        src="img/Nataša Mihajlović.jpg"
+        alt="Лого Наташе Михајловић"
+        style="display: block; width: 100%; height: auto; border-radius: 8px;">
+    </a>
+
+    <div>
+      <h1 class="author-name">Наташа Михајловић</h1>
+      <p class="author-description">
+        Ауторка · мастер информатике · инжењер
+      </p>
+    </div>
+  </div>
+</header>
  <!-- navigacioni bar kartice -->
 <div class="container">
 <ul class="nav nav-tabs">
